@@ -16,7 +16,7 @@ Keeping up with programming world tradition, here it is my "Hello World" at GitH
   <title>PHP</title>
 </head>
 <body>
-  <?php echo '<p>Hello World</p>'; ?> 
+  <?php echo '<p>Hello World!</p>'; ?> 
 </body>
 </html>
 ```
@@ -25,7 +25,19 @@ Keeping up with programming world tradition, here it is my "Hello World" at GitH
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
-      System.out.println("Hello, World");
+      System.out.println("Hello World!");
     }
 }
+```
+
+## HTML
+```html
+<html>
+<head>
+    <title>Hello World Page</title>
+</head>
+<body>
+<p>Hello World!</p>
+</body>
+</html>
 ```
