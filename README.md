@@ -41,3 +41,12 @@ public class HelloWorld {
 </body>
 </html>
 ```
+
+## C++
+```c++
+#include 
+int main(){
+    std::cout << "Hello, World!";
+    return 0;
+}
+```
