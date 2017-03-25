@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/angular@1.6.3/angular.min.js"></script>
+</head>
+<body>
+    <main-comp></main-comp>
+    <script>
+        (function(angular){
+            'use script';
+            angular
+                .module('myApp', [])
+                .component('mainComp', {
+                    template: '<h1>{{$ctrl.title}}</h1>',
+                    controller:MainCompCtrl
+                });
+
+            ////////////////////////////////
+            
+            function MainCompCtrl(){
+                var ctrl = this;
+                ctrl.title = 'Hello World!'
+            }
+
+            //bootstrap the application
+            angular.bootstrap(document.body, ['myApp'], {strictDi:true});
+        })(window.angular);
+    </script>
+</body>
+</html>

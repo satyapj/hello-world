@@ -1,4 +1,4 @@
-# hello-world
+# Hello World
 Keeping up with programming world tradition, here it is my "Hello World" at GitHub and a few "HelloWorld" code snippet from programming languages I worked with at some point of time.
 
 ## JavaScript
