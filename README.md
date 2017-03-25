@@ -50,3 +50,28 @@ int main(){
     return 0;
 }
 ```
+## AngularJS 1.6
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/angular@1.6.3/angular.min.js"></script>
+</head>
+<body>
+    <main-comp></main-comp>
+    <script>
+        (function(angular){
+            'use script';
+            angular
+                .module('myApp', [])
+                .component('mainComp', {
+                    template: '<h1>Hello World!</h1>'
+                });
+
+            //bootstrap the application
+            angular.bootstrap(document.body, ['myApp'], {strictDi:true});
+        })(window.angular);
+    </script>
+</body>
+</html>
+```
