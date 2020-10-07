@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <!-- Bare basis styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top:0;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    // Header Component 
+    function Header({ title }) {
+      return React.createElement('h1', null, `${title}`)
+    }
+
+    // Root App Component
+    function App() {
+      return (React.createElement('div', null,
+        React.createElement(Header, { title: 'App Title' }),
+        React.createElement('p', null, 'Hello World!')
+      ));
+    }
+
+    // Bootstrap React application with ReactDOM.render
+    ReactDOM.render(
+      React.createElement(App),
+      document.getElementById('root')
+    );
+
+    /*
+    // This example is not using Babel hence we no JSX here.
+    // A JSX equivalent of App component would be something like below.
+
+    function Header({ title }) {
+      return <h1>{`${title}`}</h1>
+    }
+
+    function App() {
+      return (<div>
+        <Header title="App Title" />
+        <p>Hello World!</p>
+      </div>)
+    }
+
+    ReactDOM.render(<App/>, document.getElementById('root'));
+    */
+  </script>
+</body>
+
+</html>

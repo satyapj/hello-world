@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <!-- Bare basis styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top:0;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    // Bootstrap React app with ReactDOM.render
+    ReactDOM.render(
+      React.createElement('h1', null, 'Hello World!'),
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
+</html>

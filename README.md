@@ -51,7 +51,8 @@ int main(){
 }
 ```
 ## AngularJS 1.6
-```
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,5 +74,35 @@ int main(){
         })(window.angular);
     </script>
 </body>
+</html>
+```
+
+## React 
+
+With plain ES2015+ Syntax.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    // Bootstrap React app with ReactDOM.render
+    ReactDOM.render(
+      React.createElement('h1', null, 'Hello World!'),
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
 </html>
 ```
