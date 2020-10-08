@@ -199,7 +199,7 @@ With plaing ES2015+ Syntax. This is just to show how internals of Angular works.
 
 A JavaScript framework for building user interface.
 
-- [Example-01](vue-01.html)
+- [Example-01](examples/vue/vue-01.html)
 
 ## [Node.js](https://nodejs.org/)
 
@@ -216,4 +216,4 @@ console.log(`Hello World!`);
 
 Save the code in app.js and then run it from command line as `node app.js`.
 
-- [Another Example](node-app-01.js): A basic http server
+- [Another Example](examples/nodejs/app-01.js): A basic http server
